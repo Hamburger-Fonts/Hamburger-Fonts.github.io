@@ -1,0 +1,112 @@
+
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url(/assets/fonts/AlteHaasGroteskBold.ttf) format("truetype");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Heavitas";
+  src: url(/assets/fonts/Heavitas.ttf) format("truetype");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Akira";
+  src: url(/assets/fonts/AkiraExpandedDemo.otf) format("opentype");
+}
+
+
+@font-face {
+  font-family: "Regibility";
+  src: url(/assets/fonts/regibilityVF.woff2) format("woff2");
+}
+
+@font-face {
+font-family: "Modulaire";
+src: url(/assets/fonts/Modulaire.woff) format("woff");
+}
+
+@font-face {
+font-family: "Milos";
+src: url(/assets/fonts/Milos.woff) format("woff");
+}
+
+@font-face {
+font-family: "ueberwolken";
+src: url(/assets/fonts/überwolken.woff2) format("woff2");
+}
+
+@font-face {
+font-family: "DataVisualizer";
+src: url(/assets/fonts/DataVisualizer-Regular.ttf) format("truetype");
+}
+
+@font-face {
+font-family: "Helvetica-SingleLine";
+src: url(/assets/fonts/HelveticaSingleLine-Regular.otf) format("opentype");
+}
+
+@font-face {
+font-family: "1234567";
+src: url(/assets/fonts/1234567-Regular.otf) format("opentype");
+}
+
+@font-face {
+font-family: "Blockfont";
+src: url(/assets/fonts/Blockfont.ttf) format("truetype");
+}
+
+@font-face {
+font-family: "Kandieshop";
+src: url(/assets/fonts/NeueSchrift-Regular_Luca.otf) format("opentype");
+}
+
+@font-face {
+font-family: "Dschungel";
+src: url(/assets/fonts/Dschungel1-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Tarifa Regular";
+  src: url(/assets/fonts/JVTarifav.04-Regular.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: "Tarifa Mono";
+    src: url(/assets/fonts/JVTarifav.04-Mono.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: "Tarifa Italic";
+      src: url(/assets/fonts/JVTarifav.04-Italic.otf) format("opentype");
+      }
+
+      @font-face {
+        font-family: "Splitflap VF";
+        src: url(/assets/fonts/JVSplitFlapv.02VF.ttf) format("truetype");
+        }
+      
+@font-face {
+    font-family: "Splitflap Compressed";
+    src: url(/assets/fonts/JVSplitFlapv0.2OTF/JV\ Split\ Flap\ v0.2-Compressed.otf) format("opentype");
+}
+@font-face {
+  font-family: "Splitflap Regular";
+  src: url(/assets/fonts/JVSplitFlapv0.2OTF/JV\ Split\ Flap\ v0.2-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Dorn Knight";
+  src: url(/assets/fonts/dornknight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Snowman VF";
+  src: url(/assets/fonts/Snowman_f_15VF.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "moor";
+  src: url(/assets/fonts/moor.ttf) format("truetype");
+}

@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorn Knight | Type Library</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
+    <script src="/assets/js/scripts.js"></script>
+</head>
+
+
+<style>
+    @font-face {
+        font-family: '';
+        src: url('') format('woff'),
+             url('') format('truetype'),
+             url('') format('opentype');
+    }
+</style>
+
+<body>
+    <div class="content">
+    <header>
+        <div class="fonth1" style="font-family: 'Dorn Knight';"> Dorn Knight</div>
+    </header>
+    <main>
+        <div>
+       
+
+<button id="themeToggleButton">
+    ◐
+</button>
+<div class="email-container">
+    <button class="email-button" id="sendEmailButton">+</button>
+</div>
+
+<div class="textfeld">
+
+<textarea 
+class="textarea-lonely" 
+style="font-family: 'Dorn Knight';">vegemite is a thick, dark brown australian food spread made from leftover brewers’ yeast extract with various vegetable and spice additives. it was developed by cyril callister in melbourne, victoria in 1922. a spread for sandwiches, toast, crumpets and cracker biscuits as well as a filling for pastries, vegemite is similar to british marmite, new zealand marmite, australian promite, mightymite, aussiemite, ozemite, german vitam-r, and swiss cenovis. vegemite is salty, slightly bitter, malty, and rich in glutamates – giving it an umami flavour similar to beef bouillon.
+</textarea>
+    <label>
+        <input type="range" class="fontSizeSlider" min="12" max="110" value="65">
+    </label>
+</div>
+
+        </div>
+        <br>
+        <br>
+        <div class="beschreibung">
+            <div class="div1"><u>Dorn Knight</u> made by <u>Jesse Dommermuth</u></div>
+            <div class="div2">Erstellt am 01/10/2023</div>
+            <div class="div3">Basisjahr </div>
+            <div> <a href="dommermuthjesse@gmail.com" class="div4">dommermuthjesse@gmail.com</a></div>
+            <div class="div5">
+                <a href="/assets/fonts/dornknight.ttf" class="div5" download>Download Dorn Knight</a>
+            </div>
+            <div class="div6">vegemite is a thick, dark brown australian food spread made from leftover brewers’ yeast extract with various vegetable and spice additives. it was developed by cyril callister in melbourne, victoria in 1922. a spread for sandwiches, toast, crumpets and cracker biscuits as well as a filling for pastries, vegemite is similar to british marmite, new zealand marmite, australian promite, mightymite, aussiemite, ozemite, german vitam-r, and swiss cenovis. vegemite is salty, slightly bitter, malty, and rich in glutamates – giving it an umami flavour similar to beef bouillon.</div>
+        </div>
+        <br>
+        <br>
+        <p class="usecases">Hier wurde die Schrift benutzt:</p>
+
+        <div class="bilderparent"> 
+            <img class="bild" src="/assets/img/" alt="Bild 1">
+            <img class="bild" src="/assets/img/" alt="Bild 2">
+           
+            <div class="email-container">
+                <button class="add-img" id="addImgButton">+</button>
+            </div>
+        </div>
+    </main>
+    </div>
+</body>
+</html>
+<script>
+document.getElementById('addImgButton').addEventListener('click', function () {
+    const recipient = "alexanderdelaporte@gmail.com"; // E-Mail-Adresse
+    const title = document.querySelector('.fonth1').textContent.trim(); // Schriftarttitel von der Seite holen
+    const subject = `Usecase Font ${title}`; // Dynamisch generierter Betreff mit dem Schrifttitel
+    const body = `Usecase für "${title}"\nHier jpg/png einfügen!\nDanke :)`; // Nachrichtentext
+
+    // Erstelle den mailto-Link
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Öffne den mailto-Link
+    window.location.href = mailtoLink;
+});
+</script>
+
+<script>
+    const themeToggleButton = document.getElementById('themeToggleButton');
+    let themeState = 0;
+
+    themeToggleButton.addEventListener('click', () => {
+        const textareas = document.querySelectorAll('.textarea-lonely');
+        const body = document.body;
+        const fonth1 = document.querySelector('.fonth1'); // Titel im Header
+        const divs = document.querySelectorAll('.beschreibung > div'); // div1-div6
+
+        if (themeState === 0) {
+            // Weiß → Grün
+            body.style.backgroundColor = '#42943B';
+            body.style.color = '#FAF9F6';
+
+            textareas.forEach(textarea => {
+                textarea.style.backgroundColor = '#42943B';
+                textarea.style.color = '#FAF9F6';
+            });
+
+            if (fonth1) {
+                fonth1.style.color = '#FAF9F6'; // Farbe für den Titel setzen
+            }
+
+            divs.forEach(div => {
+                div.style.color = '#FAF9F6';
+            });
+
+            themeToggleButton.style.backgroundColor = '#FAF9F6';
+            themeToggleButton.style.color = '#42943B';
+        } else if (themeState === 1) {
+            // Grün → Schwarz-Weiß
+            body.style.backgroundColor = '#000000';
+            body.style.color = '#FFFFFF';
+
+            textareas.forEach(textarea => {
+                textarea.style.backgroundColor = '#000000';
+                textarea.style.color = '#FFFFFF';
+            });
+
+            if (fonth1) {
+                fonth1.style.color = '#FFFFFF'; // Farbe für den Titel setzen
+            }
+
+            divs.forEach(div => {
+                div.style.color = '#FFFFFF';
+            });
+
+            themeToggleButton.style.backgroundColor = '#FFFFFF';
+            themeToggleButton.style.color = '#000000';
+        } else {
+            // Schwarz-Weiß → Standard
+            body.style.backgroundColor = ''; // Zurücksetzen
+            body.style.color = '';
+
+            textareas.forEach(textarea => {
+                textarea.style.backgroundColor = '';
+                textarea.style.color = '';
+            });
+
+            if (fonth1) {
+                fonth1.style.color = ''; // Farbe für den Titel zurücksetzen
+            }
+
+            divs.forEach(div => {
+                div.style.color = '';
+            });
+
+            themeToggleButton.style.backgroundColor = '#42943B';
+            themeToggleButton.style.color = '#FAF9F6';
+        }
+
+        themeState = (themeState + 1) % 3;
+    });
+</script>
+
+
+<script>
+document.getElementById('sendEmailButton').addEventListener('click', function () {
+    const recipient = "alexanderdelaporte@gmail.com"; // Ersetze mit der gewünschten E-Mail-Adresse
+    const subject = "Neue HAWburger Font"; // Betreff der E-Mail
+    const body = "Deine Schrift soll auf HAWburger Fonts erscheinen?\n↓\n↓\n!!BITTE ALLES AUSFÜLLEN!!↓\n\n\n---\ntitle:\ninfo:(Semester/Kurs/etc.)\nauthor:\ncontact:\ndescription:(das was im bearbeitbaren Textfeld & in der Beschreibung steht)\ndate-of-creation: dd/mm/yyyy\norder:!frei lassen!\n---\n\nfüge bitte deine Schriftdatei als .ttf oder .otf als Anhang hinzu.\nDanke :)"; // Nachrichtentext
+
+    // Erstelle den mailto-Link
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Öffne den mailto-Link
+    window.location.href = mailtoLink;
+});
+</script>
+
+<script>
+    document.querySelectorAll('.fontSizeSlider').forEach(slider => {
+        slider.addEventListener('input', (event) => {
+            const textarea = event.target.closest('.textfeld').querySelector('.textarea');
+            textarea.style.fontSize = event.target.value + 'px'; // Setzt die Schriftgröße der zugehörigen Textarea
+        });
+    });
+    </script>
