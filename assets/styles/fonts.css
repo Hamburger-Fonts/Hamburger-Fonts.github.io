@@ -63,6 +63,11 @@ src: url(/assets/fonts/NeueSchrift-Regular_Luca.otf) format("opentype");
 }
 
 @font-face {
+font-family: "kandieshop";
+src: url(/assets/fonts/NeueSchrift-Regular_Luca.otf) format("opentype");
+}
+
+@font-face {
 font-family: "Dschungel";
 src: url(/assets/fonts/Dschungel1-Regular.otf) format("opentype");
 }
@@ -86,6 +91,11 @@ src: url(/assets/fonts/Dschungel1-Regular.otf) format("opentype");
         font-family: "Splitflap VF";
         src: url(/assets/fonts/JVSplitFlapv.02VF.ttf) format("truetype");
         }
+
+        @font-face {
+          font-family: "SplitFlap VF";
+          src: url(/assets/fonts/JVSplitFlapv.02VF.ttf) format("truetype");
+          }
       
 @font-face {
     font-family: "Splitflap Compressed";
